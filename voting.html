@@ -1,0 +1,35 @@
+<!-- index.html (User interface) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Voting System</title>
+</head>
+<body>
+  <h1>Online Voting System</h1>
+  
+  <form id="loginForm">
+    <h2>Login</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="submit">Login</button>
+  </form>
+  
+  <form id="voteForm">
+    <h2>Vote</h2>
+    <!-- Display candidates or options dynamically -->
+    <label for="candidate">Select Candidate:</label>
+    <select id="candidate" name="candidate" required>
+      <option value="candidate1">Candidate 1</option>
+      <option value="candidate2">Candidate 2</option>
+      <option value="candidate3">Candidate 3</option>
+    </select>
+    <button type="submit">Vote</button>
+  </form>
+
+  <script src="frontend.js"></script>
+</body>
+</html>
